@@ -1,14 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .row {
   display: flex;
 }
 .cell {
-  width: 16px;
-  height: 16px;
-  border: 0.009px solid rgba(0, 0, 0, 0.05);
+  width: 8px;
+  height: 8px;
+  border: 0.009px solid rgba(0, 0, 0, 0.1);
 }
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #ededed;
+}
+.container {
+  max-width: 640px;
+  max-height: 640px;
+  background-color: white;
+  border: 1px solid black;
+}
+.title {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }

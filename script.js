@@ -4,6 +4,8 @@ const colorSelector = document.querySelector("#colorPicker");
 
 let color = "black";
 
+const toggleBorder = document.querySelector(".toggleBorder");
+
 colorSelector.addEventListener("change", (e) => {
   color = e.target.value;
 });
@@ -18,6 +20,8 @@ pickYourCanvas.addEventListener("click", () => {
   const canvasSize = prompt("How big do you want your canvas to be?");
   if (canvasSize > 100) {
     alert("Your canvas is too big! (Max 100 x 100)");
+  } else if (!canvasSize) {
+    alert("Canceled");
   } else {
     container.innerHTML = `<div class="row">${'<div class="cell"></div>'.repeat(
       canvasSize
