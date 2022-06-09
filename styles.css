@@ -1,0 +1,8 @@
+.row {
+  display: flex;
+}
+.cell {
+  width: 16px;
+  height: 16px;
+  border: 0.009px solid rgba(0, 0, 0, 0.05);
+}
