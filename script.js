@@ -2,7 +2,7 @@ const container = document.querySelector(".container");
 
 const colorSelector = document.querySelector("#colorPicker");
 
-let color = "#ffffff";
+let color = "black";
 
 colorSelector.addEventListener("change", (e) => {
   color = e.target.value;
