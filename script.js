@@ -1,5 +1,7 @@
 const container = document.querySelector(".container");
 
+const sizer = document.querySelector(".size");
+
 container.innerHTML = `<div class="row">${'<div class="cell"></div>'.repeat(
   16
 )}</div>`.repeat(16);
